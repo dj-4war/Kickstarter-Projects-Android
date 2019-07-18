@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/bg_color"
+        android:padding="@dimen/marginSizeMedium"
+        tools:context=".ui.activities.ProjectDetailsActivity">
+
+    <TextView
+            android:id="@+id/project_details_title_tv"
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textSize="@dimen/textSizeExtraLarge"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/project_details_pledged_tv"
+            android:layout_width="wrap_content"
+            android:text="Pledge"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_title_tv"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/project_details_blurb_tv"
+            android:layout_width="wrap_content"
+            android:text="Blurb"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_pledged_tv"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/project_details_by_tv"
+            android:layout_width="wrap_content"
+            android:text="by"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_blurb_tv"
+            android:textSize="@dimen/textSizeMedium"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/project_details_country_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="URL"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_by_tv"
+            android:textSize="@dimen/textSizeMedium"/>
+
+    <TextView
+            android:id="@+id/project_details_currency_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Currency"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_country_tv"
+            android:textSize="@dimen/textSizeMedium"/>
+    <TextView
+            android:id="@+id/project_details_funded_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Funded"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_currency_tv"
+            android:textSize="@dimen/textSizeMedium"/>
+
+    <TextView
+            android:id="@+id/project_details_backers_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backers"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_funded_tv"
+            android:textSize="@dimen/textSizeMedium"/>
+
+    <TextView
+            android:id="@+id/project_details_url_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backers"
+            android:autoLink="web"
+            android:layout_marginTop="@dimen/marginSizeMedium"
+            app:layout_constraintTop_toBottomOf="@id/project_details_backers_tv"
+            android:textSize="@dimen/textSizeMedium"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

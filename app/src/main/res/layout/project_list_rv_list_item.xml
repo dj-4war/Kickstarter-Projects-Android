@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/marginSizeSmall"
+              android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/project_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="@dimen/marginSizeSmall"
+            app:cardMaxElevation="@dimen/marginSizeSmall"
+            >
+
+
+        <RelativeLayout
+                android:background="@color/pale_green"
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+
+            <TextView
+                    android:id="@+id/project_cost"
+                    android:text="Cost "
+
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/IndianRed"
+            />
+
+            <TextView
+                    android:id="@+id/project_currecy_tv"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:text="Hello"
+                    android:paddingLeft="@dimen/marginSizeSmall"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/project_cost"
+                    android:paddingTop="@dimen/marginSizeMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/OrangeRed"
+            />
+            <TextView
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/project_title_tv"
+                    android:text="Hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginSizeMedium"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="@dimen/marginSizeSmallPlus"
+                    android:textStyle="bold"
+                    android:textColor="@color/bg_color"
+            />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

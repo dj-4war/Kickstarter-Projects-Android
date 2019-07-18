@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kickstarter Projects</string>
+    <string name="close_txt">Close</string>
+    <string name="title_activity_project_details">Project Details</string>
+</resources>
